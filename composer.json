@@ -1,6 +1,6 @@
 {
     "name": "phil/feature-flags-bundle",
-    "description": "Feature flags and A/B tests for Symfony: flags evaluated once per request from ordered providers (configuration, database), targeting by tenant, project or subject, stable rollouts and experiments, expiry dates, audited changes with a reason, admin screens, a controller attribute, a route condition, Twig functions, and circuit-breaker flags",
+    "description": "Turn a feature off without a deploy, roll it out gradually or run an A/B test in Symfony, with audited changes, admin screens and Twig functions.",
     "license": "MIT",
     "type": "symfony-bundle",
     "authors": [
@@ -15,10 +15,10 @@
     "require": {
         "php": ">=8.5",
         "ext-mbstring": "*",
-        "doctrine/dbal": "^4.5",
-        "doctrine/orm": "^3.7",
+        "doctrine/dbal": "^4.6",
+        "doctrine/orm": "^3.8",
         "phil/circuit-breaker": "^0.1@dev",
-        "phil/circuit-breaker-bundle": "^0.1@dev",
+        "phil/circuit-breaker-bundle": "^0.2@dev",
         "phil/ddd-bundle": "^0.1@dev",
         "phil/enums": "^0.3@dev",
         "psr/clock": "^1.0",
@@ -29,10 +29,10 @@
         "symfony/http-foundation": "^8.2",
         "symfony/http-kernel": "^8.2",
         "symfony/routing": "^8.2",
-        "twig/twig": "^3.21"
+        "twig/twig": "^3.31"
     },
     "require-dev": {
-        "doctrine/doctrine-bundle": "^3.3",
+        "doctrine/doctrine-bundle": "^3.4",
         "phpunit/phpunit": "^13.4",
         "symfony/cache": "^8.2",
         "symfony/clock": "^8.2",
